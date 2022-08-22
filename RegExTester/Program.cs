@@ -10,9 +10,9 @@ namespace RegExTester
     {
         static void Main(string[] args)
         {
-            RegexClass();
+            //RegexClass();
             RegexReplace();
-            RegexMatch();
+            //RegexMatch();
         }
 
         /// <summary>
@@ -59,13 +59,14 @@ namespace RegExTester
         static void RegexReplace()
         {
             // Define a test string.
-            string text = "\\VA/DS12\\534/";
+            string text = "filename.!@#$%^&*()";
 
             // REGEX: @"[A-Z]" Matches alphabetical characters
             // Test replacement.
             Console.WriteLine("*******************************************");
+            Console.WriteLine($"TESTED: {text}");
             Console.WriteLine("");
-            Console.WriteLine(Regex.Replace(text, @"[\/\\]", ""));
+            Console.WriteLine($"RESULT: {Regex.Replace(text, @"[.!@#$%^&*()]", "")}");
             Console.WriteLine("");
             Console.WriteLine("*******************************************");
         }
