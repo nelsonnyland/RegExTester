@@ -10,9 +10,9 @@ namespace RegExTester
     {
         static void Main(string[] args)
         {
-            //RegexClass();
+            RegexClass();
             RegexReplace();
-            //RegexMatch();
+            RegexMatch();
         }
 
         /// <summary>
